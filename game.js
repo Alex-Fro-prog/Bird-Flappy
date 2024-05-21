@@ -24,7 +24,7 @@ class Game {
         this.scoreboard = new Scoreboard("./img/scoreboard.png");
         this.gravity = 2.5;
         this.score = 0;
-        this.bestScore = localStorage.getItem("bestScore");
+        this.bestScore = localStorage.getItem("bestScore") || 0;
         this.gameOver = false;
 
         this.flapSound = new Sound("./sounds/Flap.mp3");
